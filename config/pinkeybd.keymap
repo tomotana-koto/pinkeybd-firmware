@@ -58,36 +58,55 @@
         midlle_click {
             bindings = <&mkp MCLK>;
             key-positions = <38 40>;
+            layers = <0>;
         };
 
         left_kakko {
             bindings = <&kp LS(INTERNATIONAL_8)>;
             key-positions = <2 3>;
+            layers = <0 3>;
         };
 
         right_kakko {
             bindings = <&kp LS(INTERNATIONAL_9)>;
             key-positions = <3 4>;
+            layers = <0 3>;
         };
 
         left_kagi {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <13 14>;
+            layers = <0 3>;
         };
 
         right_kagi {
             bindings = <&kp NON_US_HASH>;
             key-positions = <14 15>;
+            layers = <0 3>;
         };
 
         syounari {
             bindings = <&kp LS(COMMA)>;
             key-positions = <24 25>;
+            layers = <0 3>;
         };
 
         dainari {
             bindings = <&kp LS(PERIOD)>;
             key-positions = <25 26>;
+            layers = <0 3>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <12 14>;
+            layers = <0 3>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 20>;
+            layers = <0 3>;
         };
     };
 
@@ -103,9 +122,9 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W  &kp E      &kp R  &kp T                                &mt LS(LG(S)) LG(PERIOD)  &kp Y           &kp U      &kp I            &kp O          &kp P
-&kp A      &kp S  &kp D      &kp F  &kp G                                &none                     &kp H           &kp J      &kp K            &kp L          &minus_single
-&kp Z      &kp X  &kp C      &kp V  &kp B                                &mt F10 F7                &kp N           &kp M      &comma_question  &minus_single  &slash_double
+&kp Q      &kp W  &kp E      &kp R  &kp T                                &mt LS(LG(S)) LG(PERIOD)  &kp Y           &kp U      &kp I            &kp O                &kp P
+&kp A      &kp S  &kp D      &kp F  &kp G                                &none                     &kp H           &kp J      &kp K            &kp L                &minus_single
+&kp Z      &kp X  &kp C      &kp V  &kp B                                &mt F10 F7                &kp N           &kp M      &comma_question  &period_exclamation  &slash_double
 &kp LCTRL  &mo 1  &kp SPACE  &mo 3  &mt INTERNATIONAL_5 INTERNATIONAL_4  &mkp LCLK                 &kp LEFT_SHIFT  &mkp RCLK  &kp LEFT_ALT
             >;
 
