@@ -128,7 +128,7 @@
 &kp LCTRL  &mo 1  &kp SPACE  &mo 3  &mt INTERNATIONAL_5 INTERNATIONAL_4  &mkp LCLK                 &kp LEFT_SHIFT  &mkp RCLK  &kp LEFT_ALT
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>;
+            sensor-bindings = <&rot_kp DOWN UP>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -142,9 +142,11 @@
             bindings = <
 &kp K_MUTE         &none  &kp ESCAPE  &none      &kp TAB  &none      &kp HOME        &none      &kp UP    &none      &none
 &kp C_VOLUME_UP    &none  &kp DELETE  &none      &none    &none      &kp END         &kp LEFT   &kp DOWN  &kp RIGHT  &none
-&kp C_VOLUME_DOWN  &none  &none       &kp LG(V)  &mo 5    &none      &none           &none      &none     &none      &none
-&kp LG(H)          &none  &none       &none      &none    &mkp LCLK  &kp LEFT_SHIFT  &mkp RCLK  &none
+&kp C_VOLUME_DOWN  &none  &none       &kp LG(V)  &none    &none      &none           &none      &none     &none      &none
+&kp LG(H)          &none  &none       &none      &none    &mkp LCLK  &kp LEFT_SHIFT  &mkp RCLK  &mo 5
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -177,6 +179,8 @@
 &none  &none             &none             &none              &none                                &mt F10 F7  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD     &kp SLASH
 &none  &none             &kp SPACE         &none              &mt INTERNATIONAL_5 INTERNATIONAL_4  &mkp LCLK   &kp LEFT_SHIFT  &mkp RCLK     &kp DOUBLE_QUOTES
             >;
+
+            sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
         };
 
         // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -204,10 +208,10 @@
 
         Bt_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none         &none         &none           &none  &none
-&none  &none  &none  &none  &none  &none  &none         &none         &none           &none  &none
-&none  &none  &none  &none  &none  &none  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none  &none
-&none  &none  &none  &none  &none  &none  &none         &none         &bt BT_CLR_ALL
+&none  &none  &none  &none  &none  &bt BT_CLR_ALL  &none         &none         &none  &none  &none
+&none  &none  &none  &none  &none  &none           &none         &none         &none  &none  &none
+&none  &none  &none  &none  &none  &none           &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &none
+&none  &none  &none  &none  &none  &none           &none         &none         &none
             >;
         };
     };
