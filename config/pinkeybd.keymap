@@ -58,7 +58,7 @@
         midlle_click {
             bindings = <&mkp MCLK>;
             key-positions = <38 40>;
-            layers = <0>;
+            layers = <0 3>;
         };
 
         left_kakko {
@@ -172,10 +172,10 @@
 
         Number_and_signal_layer {
             bindings = <
-&none  &kp N2      &kp N3      &kp N4      &kp N5      &none      &kp N7          &kp N8        &kp N9        &kp N9      &kp N0
-&none  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none      &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp RS(N9)  &kp RS(N0)
-&none  &none       &none       &none       &none       &none      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE   &kp INS
-&none  &none       &kp SPACE   &none       &kp F11     &mkp LCLK  &kp LEFT_SHIFT  &mkp RCLK     &kp RSHIFT
+&none  &kp LEFT_BRACKET  &kp LS(NUMBER_6)  &kp SINGLE_QUOTE   &none                                &none       &kp N7          &kp N8        &kp N9             &kp N0         &kp LS(SEMICOLON)
+&none  &kp HASH          &kp PERCENT       &kp LS(SEMICOLON)  &kp LS(INTERNATIONAL_1)              &none       &kp NUMBER_4    &kp N5        &kp NUMBER_6       &kp RS(MINUS)  &kp RS(MINUS)
+&none  &none             &none             &none              &none                                &mt F10 F7  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD     &kp SLASH
+&none  &none             &kp SPACE         &none              &mt INTERNATIONAL_5 INTERNATIONAL_4  &mkp LCLK   &kp LEFT_SHIFT  &mkp RCLK     &kp DOUBLE_QUOTES
             >;
         };
 
