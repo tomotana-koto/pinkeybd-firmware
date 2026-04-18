@@ -62,13 +62,13 @@
         };
 
         left_kakko {
-            bindings = <&kp LS(INTERNATIONAL_8)>;
+            bindings = <&kp LS(NUMBER_8)>;
             key-positions = <2 3>;
             layers = <0 3>;
         };
 
         right_kakko {
-            bindings = <&kp LS(INTERNATIONAL_9)>;
+            bindings = <&kp LS(N9)>;
             key-positions = <3 4>;
             layers = <0 3>;
         };
