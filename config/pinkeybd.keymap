@@ -174,9 +174,9 @@
 
         Number_and_signal_layer {
             bindings = <
-&none  &kp LEFT_BRACKET  &kp HASH     &kp SINGLE_QUOTE  &none                                &none       &kp N7          &kp N8        &kp N9             &kp N0         &kp LS(SEMICOLON)
-&none  &kp LS(NUMBER_6)  &kp PERCENT  &kp SEMICOLON     &kp LS(INTERNATIONAL_1)              &none       &kp NUMBER_4    &kp N5        &kp NUMBER_6       &kp RS(MINUS)  &kp MINUS
-&none  &none             &none        &none             &none                                &mt F10 F7  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD     &kp SLASH
+&none  &kp LEFT_BRACKET  &kp HASH     &kp SINGLE_QUOTE  &none                                &none       &kp LS(MINUS)   &kp N7        &kp N8             &kp N9        &kp LS(SEMICOLON)
+&none  &kp LS(NUMBER_6)  &kp PERCENT  &kp SEMICOLON     &kp LS(INTERNATIONAL_1)              &none       &kp PERIOD      &kp NUMBER_4  &kp N5             &kp NUMBER_6  &kp MINUS
+&none  &none             &none        &none             &none                                &mt F10 F7  &kp N0          &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &kp SLASH
 &none  &none             &kp SPACE    &none             &mt INTERNATIONAL_5 INTERNATIONAL_4  &mkp LCLK   &kp LEFT_SHIFT  &mkp RCLK     &kp DOUBLE_QUOTES
             >;
 
