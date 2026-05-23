@@ -18,7 +18,7 @@
         minus_single: minus_single {
             compatible = "zmk,behavior-mod-morph";
             label = "MINUS_SINGLE";
-            bindings = <&kp MINUS>, <&kp LS(INTERNATIONAL_7)>;
+            bindings = <&kp MINUS>, <&kp AMPERSAND>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -131,10 +131,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W  &kp E                 &kp R       &kp T                                &kp LS(LG(S))   &kp Y  &kp U      &kp I            &kp O                &kp P
-&kp A      &kp S  &kp D                 &kp F       &kp G                                &none           &kp H  &kp J      &kp K            &kp L                &minus_single
-&kp Z      &kp X  &kp C                 &kp V       &kp B                                &kp LG(PERIOD)  &kp N  &kp M      &comma_question  &period_exclamation  &slash_double
-&kp LCTRL  &mo 1  &mt LEFT_SHIFT SPACE  &mt F10 F7  &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK       &mo 3  &mkp RCLK  &kp LEFT_ALT
+&kp Q      &kp W  &kp E                 &kp R  &kp T                                &kp LS(LG(S))   &kp Y       &kp U      &kp I            &kp O                &kp P
+&kp A      &kp S  &kp D                 &kp F  &kp G                                &none           &kp H       &kp J      &kp K            &kp L                &minus_single
+&kp Z      &kp X  &kp C                 &kp V  &kp B                                &kp LG(PERIOD)  &kp N       &kp M      &comma_question  &period_exclamation  &slash_double
+&kp LCTRL  &mo 3  &mt LEFT_SHIFT SPACE  &mo 1  &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK       &mt F10 F7  &mkp RCLK  &kp LEFT_ALT
             >;
 
             sensor-bindings = <&rot_kp DOWN UP>;
@@ -186,7 +186,7 @@
 &none  &kp LEFT_BRACKET  &kp HASH              &kp SINGLE_QUOTE  &santen                              &none      &kp LS(MINUS)  &kp N7        &kp N8             &kp N9        &kp LS(SEMICOLON)
 &none  &kp LS(NUMBER_6)  &kp PERCENT           &kp SEMICOLON     &kp LS(INTERNATIONAL_1)              &none      &kp PERIOD     &kp NUMBER_4  &kp N5             &kp NUMBER_6  &kp MINUS
 &none  &none             &none                 &none             &none                                &none      &kp N0         &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &kp SLASH
-&none  &none             &mt LEFT_SHIFT SPACE  &mt F10 F7        &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK  &none          &mkp RCLK     &kp DOUBLE_QUOTES
+&none  &none             &mt LEFT_SHIFT SPACE  &none             &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK  &mt F10 F7     &mkp RCLK     &kp DOUBLE_QUOTES
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
