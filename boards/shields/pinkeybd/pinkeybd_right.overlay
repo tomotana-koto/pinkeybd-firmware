@@ -52,20 +52,8 @@
 
 / {
     trackball_listener {
-        status = "okay";
+        status="okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
-        /* ===== 通常レイヤー（デフォルト） ===== */
-        /* → 何も指定しない＝マウス移動のまま */
-
-        /* ===== layer 1 のときだけスクロール ===== */
-        scroll_layer {
-            layers = <1>;
-            input-processors = <
-                &zip_xy_to_scroll_mapper
-                &zip_xy_scaler 1 10
-            >;
-        };
     };
 };
