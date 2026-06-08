@@ -131,10 +131,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W  &kp E      &kp R  &kp T                                &mt LS(LG(S)) LG(PERIOD)  &kp Y           &kp U      &kp I            &kp O                &kp P
-&kp A      &kp S  &kp D      &kp F  &kp G                                &none                     &kp H           &kp J      &kp K            &kp L                &minus_single
-&kp Z      &kp X  &kp C      &kp V  &kp B                                &mt F10 F7                &kp N           &kp M      &comma_question  &period_exclamation  &slash_double
-&kp LCTRL  &mo 3  &kp SPACE  &mo 1  &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK                 &kp LEFT_SHIFT  &mkp RCLK  &kp LEFT_ALT
+&kp Q      &kp W  &kp E      &kp R           &kp T                                &mt LS(LG(S)) LG(PERIOD)  &kp Y        &kp U      &kp I            &kp O                &kp P
+&kp A      &kp S  &kp D      &kp F           &kp G                                &none                     &kp H        &kp J      &kp K            &kp L                &minus_single
+&kp Z      &kp X  &kp C      &kp V           &kp B                                &mt F10 F7                &kp N        &kp M      &comma_question  &period_exclamation  &slash_double
+&kp LCTRL  &mo 3  &kp SPACE  &kp LEFT_SHIFT  &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK                 &lt 1 ENTER  &mkp RCLK  &kp LEFT_ALT
             >;
 
             sensor-bindings = <&rot_kp DOWN UP>;
@@ -183,10 +183,10 @@
 
         Number_and_signal_layer {
             bindings = <
-&none  &kp LEFT_BRACKET  &kp HASH     &kp SINGLE_QUOTE  &santen                              &none      &kp LS(MINUS)   &kp N7        &kp N8             &kp N9        &kp LS(SEMICOLON)
-&none  &kp LS(NUMBER_6)  &kp PERCENT  &kp SEMICOLON     &kp LS(INTERNATIONAL_1)              &none      &kp PERIOD      &kp NUMBER_4  &kp N5             &kp NUMBER_6  &kp MINUS
-&none  &none             &none        &none             &none                                &none      &kp N0          &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &kp SLASH
-&none  &none             &kp SPACE    &none             &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK  &kp LEFT_SHIFT  &kp N0        &kp DOUBLE_QUOTES
+&none  &kp LEFT_BRACKET  &kp HASH     &kp SINGLE_QUOTE  &santen                              &none      &kp LS(MINUS)  &kp N7        &kp N8             &kp N9        &kp LS(SEMICOLON)
+&none  &kp LS(NUMBER_6)  &kp PERCENT  &kp SEMICOLON     &kp LS(INTERNATIONAL_1)              &none      &kp PERIOD     &kp NUMBER_4  &kp N5             &kp NUMBER_6  &kp MINUS
+&none  &none             &none        &none             &none                                &none      &kp N0         &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &kp SLASH
+&none  &none             &kp SPACE    &none             &mt INTERNATIONAL_4 INTERNATIONAL_5  &mkp LCLK  &kp ENTER      &kp N0        &kp DOUBLE_QUOTES
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP_ARROW>;
